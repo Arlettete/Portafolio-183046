@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios1</title>
+</head>
+<body>
+    
+    <h1 align="center">Tienda de ropa online</h1>
+    <form method="post" action=""
+    enctype="text/plain">
+    <fieldset>
+        <legend>Información del cliente</legend>
+        <table align="center"> 
+                    <tbody>
+                        
+                     <tr>
+                        <td style="width: 500px;"><label for="nombre">Nombre </label></td>
+                        <td style="width: 500px;"><label for="ApeP">Apellido Paterno</label></td>
+                        <td style="width: 500px;"><label for="ApeM">Apellido Materno</label></td>
+                    </tr>
+                    <tr >
+                        <td style="width: 300px;"><input type="text" name="nombre"
+                            id="nombre" maxlength="25"
+                            placeholder="Nombre" required/></td>
+                        <td style="width: 300px;"><input type="text" name="ApeP" id="ApeP"
+                                maxlength="20" placeholder="Apellido Paterno" required/></td>
+                        <td style="width: 300px;"> <input type="text" name="ApeM" id="ApeP"
+                                    maxlength="15" placeholder="Apellido Materno" required/></td>
+
+                    </tr>
+                    <tr>
+                        <td style="width: 300px;"><label for="usuario">Nombre de usuario: </label></td>
+                        <td style="width: 300px;"><label for="Contraseña">Contraseña</label></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 300px;"><input type="text" name="usuario"
+                            id="usuario" maxlength="12"
+                            placeholder="Usuario" size="5"
+                            title="Nombre de usuario"/><br/></td>
+                            <td style="width: 300px;"><input type="password" name="contraseña" id="contraseña"
+                                maxlength="15" placeholder="Contraseña" required/></td>
+                    </tr>           
+        </table>
+    </fieldset>
+
+        <fieldset>
+        <legend>Datos de Facturación</legend>
+
+        <table align="center"> 
+            <tbody>
+                
+             <tr>
+                <td style="width: 500px;"><label for="Calle">Calle</label></td>
+                <td style="width: 500px;"><label for="num">Num: </label></td>
+                <td style="width: 500px;"><label for="colonia">Colonia</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="calle" id="calle"
+                    placeholder="Usuario"/></td>
+                    <td><input type="number" name="num" id="num"
+                    placeholder="Num. Exterior"/><br/></td>
+                    <td> <input type="text" name="col" id="col"
+                        placeholder="Colonia"/><br/></td>
+
+            </tr>
+            <tr>
+                <td style="width: 300px;"><label for="email">E-mail</label></td>
+                <td style="width: 300px;"><label for="codigop">Código Postal</label></td>
+                <td style="width: 300px;"><label for="rfc">RFC: </label></td>
+            </tr>
+            <tr>
+                
+                <td style="width: 300px;"><input type="email" name="correo" id="correo"
+                    placeholder="E-mail" required/></td> 
+                <td style="width: 300px;"><input type="number" name="cp" id="cp"
+                        placeholder="C.P"/><br/></td>
+                <td style="width: 300px;"> <input type="text" name="rfc" id="rfc"
+                            minlength="13" placeholder="RFC" required/><br/></td>
+            </tr>    
+            <td> <label for="fechav">Fecha de la venta</label>
+                <input type="date" name="fechav" id="fechav"/><br/></td>       
+</table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos del artículo adquirido</legend>
+
+        <table align="center">
+            <tbody>
+                <tr>
+                <td style="width: 500px;"><label for="Tipos">Tipos</label></td>
+                <td style="width: 500px;"><label for="Talla">Talla</label></td>
+                <td style="width: 500px;"><label for="color">Selecciona el color</label><br/>
+                    <input type="color" name="colores" id="colores"/><br/></td>
+                </tr>
+                <tr>
+                        <td><select size="5" multiple>
+                    <optgroup>
+                    <option value="1" selected>Vestido</option>
+                    <option value="2">Falda</option>
+                    <option value="3">Pantalón</option>
+                    <option value="4">Playera</option>
+                    <option value="5">Camisa</option>
+                    </optgroup>
+                </select></td>
+                <td><input type="checkbox" name="ch" id="ch"
+                    value="ch" checked/>
+                    <label for="ch">Chico</label><br/>
+                    <input type="checkbox" name="med" id="med"
+                    value="med"/>
+                    <label for="med">Mediano </label><br/>
+                    <input type="checkbox" name="gr" id="gr"
+                    value="gr"/>
+                     <label for="gr">Grande </label><br/>
+                </td>
+                <td>  
+                    <input type="submit" name="Enviar"
+                    id="Enviar" value="Enviar formulario"/>
+                    <input type="reset" name="borrar" id="borrar"
+                    value="Borrar Formulario" /> </td>
+            </tbody>
+       
+</table>
+</fieldset>
+    </form>
+    <footer>
+        <h4 align="right">&copy; Distribuidora de ropa en línea 2023.</h4>
+    </footer>
+</body>
+</html>
