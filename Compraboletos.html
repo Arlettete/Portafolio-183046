@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra tus boletos</title>
+    
+    
+</head>
+<body>
+    
+   
+    <form method="post" action=""
+    enctype="text/plain">
+    <fieldset>
+        <legend align="center">Ingresa tus datos</legend>
+      <table align="center">
+        <tbody>
+                        
+            <tr>
+               <td style="width: 500px;"><label for="nombre">Nombre </label></td>
+               <td style="width: 500px;"><label for="ApeP">Apellido Paterno</label></td>
+               <td style="width: 500px;"><label for="ApeM">Apellido Materno</label></td>
+           </tr>
+           <tr >
+               <td style="width: 300px;"><input type="text" name="nombre"
+                   id="nombre" maxlength="25"
+                   placeholder="Nombre" required/></td>
+               <td style="width: 300px;"><input type="text" name="ApeP" id="ApeP"
+                       maxlength="20" placeholder="Apellido Paterno" required/></td>
+               <td style="width: 300px;"> <input type="text" name="ApeM" id="ApeP"
+                           maxlength="15" placeholder="Apellido Materno" required/></td>
+
+           </tr>
+           <tr>
+               <td style="width: 300px;"><label for="usuario">Nombre de usuario: </label></td>
+               <td style="width: 300px;"><label for="Contraseña">Contraseña</label></td>
+           </tr>
+           <tr>
+               <td style="width: 300px;"><input type="text" name="usuario"
+                   id="usuario" maxlength="12"
+                   placeholder="Usuario" size="5"
+                   title="Nombre de usuario"/><br/></td>
+                   <td style="width: 300px;"><input type="password" name="contraseña" id="contraseña"
+                       maxlength="15" placeholder="Contraseña" required/></td>
+           </tr>           
+      </table>
+
+    </fieldset>
+    <fieldset>
+        <legend align="center">Datos de Facturación</legend>
+      <table align="center">
+        <tbody>
+                        
+            <tr>
+                <td style="width: 500px;"><label for="Calle">Fecha y hora de la función</label></td>
+                <td style="width: 500px;"><label for="num">Número de teléfono </label></td>
+                <td style="width: 500px;"><label for="colonia">Colonia</label></td>
+            </tr>
+            <tr>
+                <td><input type="datetime-local" name="datet" id="datet"/></td>
+                    <td><input type="text" name="num" id="num"
+                    placeholder="Num. Tel" minlength="12"/><br/></td>
+                    <td> <input type="text" name="col" id="col"
+                        placeholder="Colonia"/><br/></td>
+
+            </tr>
+            <tr>
+                <td style="width: 300px;"><label for="email">Correo Eléctronico</label></td>
+                <td style="width: 300px;"><label for="codigop">Método de Pago</label></td>
+                <td style="width: 300px;"><label for="rfc">RFC: </label></td>
+            </tr>
+            <tr>
+                
+                <td style="width: 300px;"><input type="email" name="correo" id="correo"
+                    placeholder="E-mail" required/></td> 
+                <td style="width: 300px;"><input type="radio" name="cr" id="cr" 
+                    value="cr"/>
+                    <label for="mp">Crédito</label>
+            
+                    <input type="radio" name="metodo" id="db" 
+                    value="db"/>
+                    <label for="mp">Débito</label>
+            
+                    <input type="radio" name="metodo" id="tr" 
+                    value="tr"/>
+                    <label for="mp">Transferencia</label><br/></td>
+                <td style="width: 300px;"> <input type="text" name="rfc" id="rfc"
+                            minlength="13" placeholder="RFC" required/><br/></td>
+            </tr>    
+            <td> <label for="fechav">Fecha de la función</label>
+                <input type="date" name="FechaN" id="FechaN" 
+        placeholder="Fecha de nacimiento"/><br/></td>       
+      </table>
+
+    </fieldset>
+    <fieldset>
+        <legend>Datos de Boletos</legend>
+
+        <table align="center">
+            <tbody>
+                <tr>
+                <td style="width: 500px;"><label for="ubi">Selecciona tu ubicación</label></td>
+                <td style="width: 500px;"><label for="tipo">Tradicional</label></td>
+                <td style="width: 500px;"><label for="boletos">Boletos</label><br/>
+                    
+                    </td>
+                </tr>
+                <tr>
+                        <td><select size="5" multiple>
+                    <optgroup>
+                    <option value="1" selected>Cinépolis Macro Plaza San luís Potosí</option>
+                    <option value="2">Cinépolis Plaza Sendero</option>
+                    <option value="3">Cinépolis Tangamanga</option>
+                    <option value="4">Cinépolis Plaza El Dorado</option>
+                    <option value="5">Cinépolis Plaza San Luis</option>
+                    </optgroup>
+                </select></td>
+                <td><input type="checkbox" name="ch" id="ch"
+                    value="ch" checked/>
+                    <label for="ch">Adulto</label><br/>
+                    <input type="checkbox" name="med" id="med"
+                    value="med"/>
+                    <label for="med">Niños </label><br/>
+                    <input type="checkbox" name="gr" id="gr"
+                    value="gr"/>
+                     <label for="gr">3era edad </label><br/>
+                </td>
+                <td>  
+                    <label for="cant">Selecciona cantidad de boletos</label>
+                    <input type="number" name="cant" id="cant"
+                    placeholder="Cant." minlength="1"/><br/>
+                    <label for="asientos">Asientos Disponibles:</label><br/>
+                    <img src="boletos.jpg" width="150" height="150"><br/>
+                    <input type="submit" name="Enviar"
+                    id="Enviar" value="Finalizar Compra"/>
+                    <input type="reset" name="borrar" id="borrar"
+                    value="Borrar Datos" /> </td>
+            </tbody>
+       
+</table>
+</fieldset>
+    
+    </form>
+    
+</body>
+</html>
