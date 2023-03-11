@@ -5,51 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinepolis</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        table {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+    </style>
 </head>
-<body>
-    <header>
-		<h1>Cinépolis</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Películas</a></li>
-				<li><a href="#">Sucursales</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
 
-	<main>
-		<section>
-			<h2>Estrenos</h2>
-			<ul>
-				<li><a href="#">Película 1</a></li>
-				<li><a href="#">Película 2</a></li>
-				<li><a href="#">Película 3</a></li>
-			</ul>
-		</section>
+<body background="fondo4.jpg" style="
+background-repeat:no-repeat;
+background-size: 100%;
+background-attachment: fixed;">
+    <nav><ul>
+        <li><a href="Cinepolis.html">Inicio</a></li>
+        <li><a href="quienesomos.html">Quiénes somos</a></li>
+        <li><a href="#">Menú</a>
+            <ul><li><a href="">Preventas</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="Compraboletos.html" target="_blank">Compra tus boletos</a></li>
+            <li><a href="#Cartelera">Cartelera</a></li></ul>
+            </li>
+        <li><a href="Proximos estrenos.html">Próximos estrenos</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul></nav>
+    <img src="banner1,jpg.png"><br/>
+    
+    <div id="Cartelera" >
+    <table style="width: 500px;" align="center">
+        <thead>
+            <th align="left"><img src="cartelera2.jpg"></th>
+        </thead>
 
-		<section>
-			<h2>Próximamente</h2>
-			<ul>
-				<li><a href="#">Película 4</a></li>
-				<li><a href="#">Película 5</a></li>
-				<li><a href="#">Película 6</a></li>
-			</ul>
-		</section>
+        <tbody >
 
-		<section>
-			<h2>Sucursales</h2>
-			<ul>
-				<li><a href="#">Sucursal 1</a></li>
-				<li><a href="#">Sucursal 2</a></li>
-				<li><a href="#">Sucursal 3</a></li>
-			</ul>
-		</section>
-	</main>
+            <tr>
+               
+                <td> <img src="eo.jpg.png">
+                    <img src="scream.jpg.png">
+                    <img src="65.jpg">
+                    <img src="academia.jpg">
+                    <img src="shazam.jpg">
+                    <img src="quantumania.jpg">
+                    <img src="laballena.jpg">
+                    <img src="demon.jpg">
+                    <img src="tar.jpg">
+                    <img src="avatar.jpg">
+                    <img src="fabelman.jpg">
+                    <img src="todo.jpg">
+                   </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
 
-	<footer>
-		<p>Derechos reservados &copy; Cinépolis 2023</p>
-	</footer>
+    <div id="ubicacion">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.228097143966!2d-101.00584078465579!3d22.155387853737324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98b5a7e6c007%3A0xe26d37d61bab5285!2sCin%C3%A9polis%20San%20Luis%20Potos%C3%AD%20%22El%20Dorado%22%20(C028)!5e0!3m2!1ses-419!2smx!4v1678505064842!5m2!1ses-419!2smx" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14780.9098051808!2d-101.01240686385539!3d22.155412447264837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa1be6885866b%3A0x4dab9b4cfd68ec39!2sCin%C3%A9polis%20Plaza%20Citadina%20San%20Luis%20Potos%C3%AD!5e0!3m2!1ses-419!2smx!4v1678505239727!5m2!1ses-419!2smx" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14783.925082444148!2d-101.0483577604492!3d22.126689800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9921ec5e653f%3A0x49575a56c6915e11!2sCinepolis%20VIP!5e0!3m2!1ses-419!2smx!4v1678505300179!5m2!1ses-419!2smx" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 </body>
 </html>
