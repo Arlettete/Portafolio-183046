@@ -1,0 +1,31 @@
+#uno,p{
+    background-color: rgb(150, 242, 227);
+    text-align: unset;
+
+}
+#P1{
+    text-align: left;
+    color: rgb(49, 42, 122);
+}
+p:nth-child(1),#Ama{
+    color: purple;
+    size: 400px;
+}
+p:nth-last-child(1){
+    text-align: left;
+    color: rgb(8, 42, 136);
+}
+#E{
+    color: blue;
+}
+a{
+    color: purple;
+}
+#dos{
+    background-color: rgb(119, 245, 150);
+    text-align: unset;
+    color: black;
+}
+ol{
+    list-style-type: decimal;
+}
