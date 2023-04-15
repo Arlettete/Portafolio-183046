@@ -1,0 +1,106 @@
+@font-face {
+    font-family: mifuente;
+    src: url(fontss/BungeeShade-Regular.ttf);
+}
+@font-face {
+    font-family: mifuente2;
+    src: url(fontss/Iceberg-Regular.ttf);
+}
+body
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 100;
+}
+
+nav ul 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ec9f1b;
+    display:inline-block;
+    padding: 10px;
+    text-align: left;
+  }
+ 
+  nav li 
+  {
+    font-size: 1.2em;
+    line-height: 40px;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+ 
+  nav a 
+  {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'mifuente2', cursive;
+  }
+ 
+  nav ul ul 
+  {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fdd898;
+  }
+ 
+  nav ul li:hover > ul 
+  {
+    display:inherit;
+  }
+ 
+  nav ul ul li 
+  {
+    width: 200px;
+    float:none;
+    display:list-item;
+    position: relative;
+  }
+ 
+  nav ul ul ul li 
+  {
+    position: relative;
+    top:-60px;
+    left:200px;
+  }
+ 
+  nav a:hover 
+  {
+    background-color:#ffaa00;
+  }
+
+  .container 
+  {
+    overflow: hidden;
+  }
+
+  .right 
+  {
+    position: absolute;
+			background-color: #2878f7;
+			border-radius: 10px;
+			padding: 10px;
+			color: white;
+            top: 6px;
+            right: 150px;
+
+  }
+
+  p
+  {
+    font-family:mifuente;
+    text-align: right;
+    color: #fff;
+    font-size: 25px;
+  }
+
+
+ 
