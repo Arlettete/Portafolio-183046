@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="funcioncalcu.js"></script>
+    <link href="estiloscalcu.css" rel="stylesheet" type="text/css"/>
+</head>
+<body style="background-color: rgb(246, 181, 102);">
+    <h1 id="titulo">Calculadora</h1>
+    <form id="contenido">
+        <label for="num1">Escribe un número</label>
+        <br>
+        <input type="number" id="num1" name="num1">
+        <br>
+        <label for="num2">Escribe un número</label>
+        <br>
+        <input type="number" id="num2" name="num2">
+        <br>
+        <br>
+        <label>Selecciona la operación a realizar-></label>
+        <br>
+        <br>
+        <input type="radio" id="suma" name="operacion" value="suma">
+        <label for="suma">Suma &nbsp;</label>
+        <input type="radio" id="resta" name="operacion" value="resta">
+        <label for="resta">Resta &nbsp;</label>
+        <input type="radio" id="multiplicacion" name="operacion" value="multiplicacion">
+        <label for="multiplicacion">Multiplicación &nbsp;</label>
+        <input type="radio" id="division" name="operacion" value="division">
+        <label for="division">División &nbsp;</label>
+        <br>
+        <br>
+        <button type="button" onclick="calcular()">Calcular</button>
+    </form>
+    <p id="resultado"></p>
+</body>
+</html>
