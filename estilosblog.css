@@ -1,0 +1,59 @@
+@font-face
+{
+    font-family: fuente1;
+    src:url(fuentes/Amaranth-Bold.ttf);
+}
+
+form
+{
+    font-family: fuente1;
+}
+
+table{
+    font-family: fuente1;
+    font-size: large;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}  
+    nav a{
+          text-decoration:none;
+          color:inherit;
+          font-size:14px;
+          position:relative;
+          }
+                
+    nav li{
+          display:inline-block;
+          width:150px;
+          height:30px;
+          padding:5px 10px;
+          background-color:#1C2392;
+          border:1px solid #1C2392;
+          text-align:center;
+          color:#fff;
+          position:relative;
+    }
+                
+    nav li:hover{
+          background-color:#fff;
+          color:#1C2392;
+          }
+                
+    nav li>ul{
+          display:none;
+          }
+    
+    nav li:hover>ul{
+          display:block;
+          position:absolute;
+          top:30px;
+          left:0px;
+    }
+    #Img1{
+      height: 25px;
+      width: 145;
+      display: block;
+    }
+    #p1{
+      padding-right: 1px;
+    }

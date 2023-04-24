@@ -1,0 +1,103 @@
+*{margin:0;padding:0;box-sizing:border-box;}  
+    nav a{
+          text-decoration:none;
+          color:inherit;
+          font-size:14px;
+          position:relative;
+          }
+                
+    nav li{
+          display:inline-block;
+          width:150px;
+          height:30px;
+          padding:5px 10px;
+          background-color:#1C2392;
+          border:1px solid #1C2392;
+          text-align:center;
+          color:#fff;
+          position:relative;
+    }
+                
+    nav li:hover{
+          background-color:#fff;
+          color:#1C2392;
+          }
+                
+    nav li>ul{
+          display:none;
+          }
+    
+    nav li:hover>ul{
+          display:block;
+          position:absolute;
+          top:30px;
+          left:0px;
+    }
+    #Img1{
+      height: 25px;
+      width: 145;
+      display: block;
+    }
+    #p1{
+      padding-right: 1px;
+    }
+    \\
+    #cajaformulario{
+        float: left;
+        padding: 20px;
+        border: 1px solid #070505;
+        background-color: #043958;
+        }
+        #cajadatos{
+        float: left;
+        width: 400px;
+        margin-left: 20px;
+        padding: 20px;
+        border: 1px solid #999999;
+        background-color: #0439586b;
+        }
+        #clave, #texto{
+        width: 200px;
+        }
+        #cajadatos > div{
+        padding: 5px;
+        border-bottom: 1px solid #999999;
+        
+        }
+        
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #0b3e63;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #4465FB;
+        }
+    .coment{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        flex-wrap: wrap;
+    }
+    .com{
+        font-size: 40px; 
+        color: rgb(12, 12, 150);
+        text-decoration: none;
+        text-align: center;
+    }
+    
