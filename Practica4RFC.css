@@ -1,0 +1,60 @@
+/* Estilos CSS para el formulario */
+@font-face {
+    font-family: mifuente;
+    src: url(fonts/BungeeShade-Regular.ttf);
+}
+@font-face {
+    font-family: mifuente2;
+    src: url(fonts/PathwayExtreme-Italic-VariableFont_opsz\,wdth\,wght.ttf);
+}
+@font-face {
+    font-family: mifuente3;
+    src: url(fonts/Rajdhani-Regular.ttf);
+}
+
+h1{
+    font-family: mifuente3;
+    text-align: center;
+    background-color: rgba(255, 196, 242, 0.288);
+    
+}
+form{
+    font-family: mifuente3;
+ }
+ body{
+    background-color: rgba(255, 186, 209, 0.432);
+ }
+
+ p{
+    font-family: mifuente3;
+    background-color: rgb(223, 166, 201);
+ }
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input {
+    display: block;
+    align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 25%;
+    box-sizing: border-box;
+  }
+  button {
+    font-family: mifuente3;
+    padding: 5px;
+    background-color: #99237b67;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #873e8e91;
+  }
+  #rfc {
+    margin-top: 20px;
+    font-weight: bold;
+  }
