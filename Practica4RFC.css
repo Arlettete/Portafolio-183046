@@ -1,15 +1,15 @@
 /* Estilos CSS para el formulario */
 @font-face {
     font-family: mifuente;
-    src: url(fonts/BungeeShade-Regular.ttf);
+    src: url(BungeeShade-Regular.ttf);
 }
 @font-face {
     font-family: mifuente2;
-    src: url(fonts/PathwayExtreme-Italic-VariableFont_opsz\,wdth\,wght.ttf);
+    src: url(PathwayExtreme-Italic-VariableFont_opsz\,wdth\,wght.ttf);
 }
 @font-face {
     font-family: mifuente3;
-    src: url(fonts/Rajdhani-Regular.ttf);
+    src: url(Rajdhani-Regular.ttf);
 }
 
 h1{
