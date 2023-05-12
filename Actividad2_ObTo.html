@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="Actividad2_Estilos.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+
+    <script type="text/javascript" src="jspdf/js/jquery/jquery-1.7.1.min.js"></script>
+</head>
+<script>
+var total;
+function califica() //define una función llamada califica() que calcula una puntuación total y proporciona un comentario sobre el rendimiento del usuario en un cuestionario de cuatro preguntas.
+
+    {var total=0; //La variable total se define inicialmente fuera de la función con un valor indefinido. Dentro de la función, se redefine la variable total con un valor de cero.
+
+    	for (var x=1;x<=4;x++) //La función utiliza un bucle for para iterar a través de cuatro preguntas numeradas de 1 a 4. 
+    	{
+        var res=0;
+        var nom="r"+x; //se utiliza para buscar el conjunto de elementos de entrada del usuario para la pregunta actual.
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++) // se comprueba cada elemento de entrada en el conjunto para ver si está marcado, y si es así, se asigna el valor de la entrada a la variable res.
+        {
+            if(resul[i].checked==true) //el valor de res se suma al valor actual de total
+                res=parseInt(resul[i].value);
+        }
+        total=total+res; //se actualiza el elemento HTML con el ID "total" para mostrar la puntuación acumulada actual.
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==20) //para determinar qué mensaje de comentario debe mostrarse al usuario. Si la puntuación total es 20, 
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!"; // se muestra un mensaje de "EXCELENTE!!!"
+        else
+        	if(total==15) //Si la puntuación total es 15,
+        	document.getElementById("comentario").innerHTML="Regular!!"; //se muestra un mensaje de "Regular!!"
+        else
+        	if(total<=15) //Si la puntuación total es menor o igual a 15
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";//se muestra un mensaje de "Estudia un poco más".
+    } 
+</script>
+
+<body background="fondocss.jpg" style="background-repeat: ;background-size: 100%;">
+    <div id="contiene">
+	<h1>Comprueba tu conocimiento sobre CSS en este test</h1>
+	<h2>Test de conocimiento: CSS</h2>
+<form>
+<div id="cuestionario">
+	
+	<ul>
+
+		<li>1.-¿Cuál es la forma más eficiente de aplicar estilos CSS en un documento HTML?</li>
+        <br/>
+		<input type="radio" name="r1" id="r1" value="5"/>Hojas de estilo externas
+        <br/>
+        <br/>
+		<input type="radio" name="r1" id="r1" value="0"/>En línea
+        <br/>
+        <br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Incrustado en la cabecera
+        <br/>
+        <br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Mediante PHP
+        <br/>
+        <br/>
+		
+		<li>2.-¿Cuáles de las siguientes declaraciones son propiedades o atributos?</li>
+        <br/>
+		<input type="radio" name="r2" id="r2" value="0"/>h1
+        <br/>
+        <br/>
+		<input type="radio" name="r2" id="r2" value="5"/>Background-color
+        <br/>
+        <br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Italic
+        <br/>
+        <br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Span 
+        <br/>
+        <br/>
+
+		<li>3.-¿Cómo se define un color de fondo para todas las etiquetas "p" en CSS?</li>
+        <br/>
+		<input type="radio" name="r3" id="r3" value="0"/>p.all {background-color:red;}<br/><br/>
+		<input type="radio" name="r3" id="r3" value="0"/>.p {background-color:red;}<br/><br/>
+		<input type="radio" name="r3" id="r3" value="5"/>p {background-color:red;}<br/><br/>
+		<input type="radio" name="r3" id="r3" value="0"/>#p {background-color:red;}<br/><br/>
+
+        <li>4.-¿Con qué propiedad se define el espacio entre el borde de un elemento y los elementos que lo rodean?</li>
+        <br/>
+		<input type="radio" name="r4" id="r4" value="0"/>border
+        <br/>
+        <br/>
+		<input type="radio" name="r4" id="r4" value="0"/>margin
+        <br/>
+        <br/>
+		<input type="radio" name="r4" id="r4" value="5"/>padding
+        <br/>
+        <br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Ninguna respuesta es correcta
+        <br/><br/>
+	</ul>
+	
+</div>
+<input type="button" value="Calificar" onclick="califica()"/>
+
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
