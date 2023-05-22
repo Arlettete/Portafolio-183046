@@ -1,0 +1,57 @@
+
+@font-face {
+        font-family:fuenteprin ;
+        src: url(ShareTech-Regular.ttf);
+    }
+
+@font-face {
+        font-family: fuenteDos;
+        src: url(SquadaOne-Regular.ttf);
+    }
+
+@font-face {
+        font-family: fuenteUNO;
+        src: url(RampartOne-Regular.ttf);
+    }
+    
+h1{
+    font-family: fuenteUNO;
+}
+    
+label,p{
+    font-family: fuenteprin;
+    text-align: center;
+}
+
+
+form{
+    text-align: center;
+    font-family: fuenteDos;
+}
+
+#enviarformulario{
+    font-family: fuenteUno;
+    padding: 5px;
+    background-color: #27bce667;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #c7baa6;
+    text-align: center;
+        
+}
+
+.botonuno{
+    font-family: fuenteDOS;
+    border-radius: 5px;
+    background-color: rgba(99, 93, 74, 0.636);
+    padding: 10px 20px;
+   
+}
+
