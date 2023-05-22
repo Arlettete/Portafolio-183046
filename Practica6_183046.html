@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 6 API</title>
+    <link rel="stylesheet" type="text/css" href="Practica6_estilos.css">
+</head>
+<body background="medicinafondo.jpg">
+    <h1>Implementacion de la API Web Geolocation</h1>
+
+    <p>El API Web Geolocation se implementará para pedirle al usuario que permita acceder a la ubicación actual
+        y así poder localizar el consultorio más cercano a su locación.
+    </p>
+    <h1>¿Qué es la API Geolocation?</h1>
+
+    <p> La API utiliza varios métodos para determinar la ubicación del usuario, como la dirección IP, 
+        la información del proveedor de servicios de internet, la información del navegador y la ubicación GPS
+         (solo si el usuario lo permite).</p>
+
+    <p>Una vez que se ha determinado la ubicación del usuario, la API devuelve las coordenadas geográficas, que pueden ser utilizadas
+         para mostrar mapas, información localizada, o para realizar otras tareas que requieran información de ubicación.</p>
+    
+    <h1>Importancia de la API</h1>
+    <p>La API de geolocalización es una tecnología muy útil para los sitios web que necesitan saber la ubicación de sus usuarios, 
+        como las aplicaciones de mapas, de viajes, de comercio electrónico y de búsqueda local. También es útil para los sitios web de
+         medicina estética, 
+        ya que puede mostrar información localizada y hacer recomendaciones específicas basadas en la ubicación del usuario</p>
+
+    <h1>Utilidad</h1>
+    <h4>Publicidad y marketing:</h4>
+    <div id="publi">
+    <p>Permitir enviar anuncios personalizados basados en la
+         ubicación del usuario, lo que puede aumentar la eficacia de la publicidad y mejorar la experiencia del usuario.</p>
+    <h4>Navegación:</h4>
+    <p>encontrar direcciones y rutas a través de mapas digitales y sistemas de navegación, lo que hace que sea más fácil
+         y conveniente llegar a un destino.</p>
+        </div>
+        <h4>Haz click en el botón para mostrar el ejemplo:</h4>
+    <button onclick="obtenerUbicacion()">Obtener ubicación</button>
+
+
+        <script>
+            //Define una funcion llamada obtenerUbicacion
+            function obtenerUbicacion(){
+                //Verifica si el navegador del ususario soporta la API de geolocalizacion web
+                if(navigator.geolocation){
+                    //Si el navegador soporta la API de geolocalizacion web, obtiene la
+                    //ubicacion actual del usuario
+                    navigator.geolocation.getCurrentPosition(function(posicion){
+                        //Almacena la latitud y longitud del usuario en variables
+                        var latitud = posicion.coords.latitude;
+                        var longitud = posicion.coords.longitude;
+    
+                        //Muestra un mensaje con la ubicacion actual del usuario
+                        alert('Tu ubicación actual es: ' + latitud + ', '+ longitud);
+                    });
+                }else {
+                    //Si el navegador no soporta la API de geolocalizacion web, muestra un
+                    //mensaje indicandolo
+                    alert('Tu navegador no soporta la web Geolocation API');
+                }
+            }
+        </script>
+
+</body>
+</html>
