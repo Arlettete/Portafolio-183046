@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Practica5_Estilos.css">
     <title>Api Geolocation</title>
     <script>
         //Define una funcion llamada obtenerUbicacion
@@ -28,9 +29,12 @@
         }
     </script>
 </head>
-<body background="geolocalizacion.jpg">
+<body background="FondoAPIGeo.jpg" >
     <h1>Ejemplo de la Web Geolocation API</h1>
+    
     <p>Haz click en el botón para obtener tu ubicación actual:</p>
-    <button onclick="obtenerUbicacion()">Obtener ubicación</button>
+    <div class="contenedor">
+    <button onclick="obtenerUbicacion()" class="boton">Obtener ubicación</button>
+    </div>
 </body>
 </html>

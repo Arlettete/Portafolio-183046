@@ -1,0 +1,43 @@
+@font-face {
+    font-family: fuenteUNO;
+    src: url(RampartOne-Regular.ttf);
+}
+
+@font-face {
+    font-family:fuenteDOS ;
+    src: url(ShareTech-Regular.ttf);
+}
+h1{
+    font-family: fuenteUNO;
+    text-align: center;
+    background-color: rgb(238, 255, 196);
+}
+
+p{
+    text-align: center;
+    font-family: fuenteDOS;
+}
+
+.contenedor{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh; /* Altura del contenedor */
+   
+    border: none;
+    
+}
+
+.boton{
+    font-family: fuenteDOS;
+    border-radius: 5px;
+    background-color: rgb(255, 238, 112);
+    padding: 10px 20px;
+   
+}
+
+body{
+    background-repeat: no-repeat;
+    
+}
