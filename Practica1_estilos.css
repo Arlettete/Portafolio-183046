@@ -1,0 +1,71 @@
+@font-face {
+    font-family: fuenteUno;
+    src: url(RampartOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: fuenteDos;
+    src: url(ShareTech-Regular.ttf);
+}
+
+@font-face {
+    font-family:fuenteTres ;
+    src: url(SquadaOne-Regular.ttf);
+}
+body
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 100;
+}
+
+h1
+{
+    font-size: 100px;
+    color: rgb(165, 163, 127);
+    text-align: center;
+    font-family: fuenteTres;
+    background-color: rgba(250, 250, 230, 0.595);
+}
+
+button
+{
+    size: 70px;
+}
+
+p
+{
+    background-color: rgba(212, 198, 138, 0.886);
+    color: #000000;
+    font-family: fuenteDos;
+}
+
+.container
+{
+  overflow: hidden;
+}
+
+.right
+{
+  width: 10%;
+  float: right;
+  border: 1px solid #b4a803;
+  padding: 10px;
+  box-shadow: 2px 2px 5px #adb902;
+  background-color: #c3ac82;
+}
+
+p
+{
+  color: #000000;
+  font-size: 25px;
+}
+
+.boton{
+    font-family: fuenteDOS;
+    border-radius: 5px;
+    background-color: rgba(156, 152, 118, 0.721);
+    padding: 10px 20px;
+   
+}
